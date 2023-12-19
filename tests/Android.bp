@@ -24,6 +24,9 @@ android_test {
     srcs: ["src/**/*.java"],
     sdk_version: "current",
     libs: ["android.test.base.stubs"],
-    static_libs: ["junit"],
+    static_libs: [
+        "junit",
+        "androidx.test.rules",
+    ],
     instrumentation_for: "PartnerBookmarksProvider",
 }
