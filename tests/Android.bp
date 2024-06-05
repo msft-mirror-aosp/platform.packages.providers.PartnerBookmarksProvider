@@ -15,6 +15,7 @@
 //
 
 package {
+    default_team: "trendy_team_aosp",
     default_applicable_licenses: ["Android-Apache-2.0"],
 }
 
@@ -24,6 +25,9 @@ android_test {
     srcs: ["src/**/*.java"],
     sdk_version: "current",
     libs: ["android.test.base.stubs"],
-    static_libs: ["junit"],
+    static_libs: [
+        "junit",
+        "androidx.test.rules",
+    ],
     instrumentation_for: "PartnerBookmarksProvider",
 }
