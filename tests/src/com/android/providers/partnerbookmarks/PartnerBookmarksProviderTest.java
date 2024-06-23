@@ -19,10 +19,8 @@ package com.android.providers.partnerbookmarks;
 import android.content.ContentProviderClient;
 import android.database.Cursor;
 import android.test.AndroidTestCase;
-import android.test.suitebuilder.annotation.SmallTest;
-import android.util.Log;
 
-import junit.framework.TestCase;
+import androidx.test.filters.SmallTest;
 
 public class PartnerBookmarksProviderTest extends AndroidTestCase {
     private static final String TAG = "PartnerBookmarksProviderTest";
